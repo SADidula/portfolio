@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <link rel="stylesheet" href="w3.css" />
+    <link rel="stylesheet" href="test.css" />
+    <link rel="stylesheet" href="gensis.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="TemplateData/style.css" />
+
+    <title>SADidula.com | S.A Didula Kasunka Manura - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="images/icon-v2.ico" />
+
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.7.1.min.js"
+    ></script>
+    <script type="text/javascript" src="projects_new.js"></script>
+  </head>
+  <body class="dark">
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+      <!-- Avatar image in top left corner -->
+      <!--  <img src="/w3images/avatar_smoke.jpg" style="width:100%">-->
+      <img
+        src="images/S.gif"
+        alt="S"
+        style="width: 50%; left: 44%; top: -0.5%"
+      />
+      <img
+        src="images/A.gif"
+        alt="A"
+        style="width: 50%; left: 46%; top: -0.5%"
+      />
+      <img
+        src="images/D.gif"
+        alt="D"
+        style="width: 50%; left: 48%; top: -0.5%"
+      />
+      <img
+        src="images/K.gif"
+        alt="K"
+        style="width: 50%; left: 50%; top: -0.5%"
+      />
+
+      <p></p>
+
+      <a
+        href="projects_gamedev.html"
+        class="w3-bar-item w3-button w3-padding-large"
+      >
+        <i class="fa fa-home w3-xxlarge"></i>
+        <p>.GAME<br />PROJECTS()</p>
+      </a>
+
+      <a
+        href="projects_fullstack.html"
+        class="w3-bar-item w3-button w3-padding-large"
+      >
+        <i class="fa fa-user w3-xxlarge"></i>
+        <p>.FULLSTACK<br />PROJECTS()</p>
+      </a>
+
+      <a
+        href="projects_personal.html"
+        class="w3-bar-item w3-button w3-padding-large"
+      >
+        <i class="fa fa-eye w3-xxlarge"></i>
+        <p>.PERSONAL<br />PROJECTS()</p>
+      </a>
+
+      <a href="#footer" class="w3-bar-item w3-button w3-padding-large">
+        <i class="fa fa-envelope w3-xxlarge"></i>
+        <p>.ABOUT()</p>
+      </a>
+    </nav>
+
+    <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+      <div
+        class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small"
+      >
+        <a
+          href="projects_gamedev.html"
+          class="w3-bar-item w3-button"
+          style="width: 25% !important"
+          >.GAME PROJECTS()</a
+        >
+        <a
+          href="projects_fullstack.html"
+          class="w3-bar-item w3-button"
+          style="width: 25% !important"
+          >.FULLSTACK PROJECTS()</a
+        >
+        <a
+          href="projects_personal.html"
+          class="w3-bar-item w3-button"
+          style="width: 25% !important"
+          >.PERSONAL PROJECTS()</a
+        >
+        <a
+          href="#footer"
+          class="w3-bar-item w3-button"
+          style="width: 25% !important"
+          >.ABOUT()</a
+        >
+      </div>
+    </div>
+
+    <!-- Page content -->
+    <div class="w3-padding-large" id="main">
+      <!-- Introduction -->
+      <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+        <h1 class="w3-jumbo">Game Development Projects</h1>
+        <p>
+          Projects I have developed for Supersonic, Voodoo, and YSo Corp. and
+          other well known publishers.
+        </p>
+      </header>
+      <!-- Introduction end -->
+
+      <!-- Supersonic section -->
+      <div
+        class="w3-content w3-justify w3-text-grey w3-padding-64"
+        id="supersonic"
+      >
+        <h2 class="w3-text-light-grey">
+          <a class="link" href="https://supersonic.com/" target="_blank"
+            >Supersonic Projects</a
+          >
+        </h2>
+        <h5 class="w3-text-grey">
+          Supersonc Studios is a mobile game publisher and studio headquartered
+          in Tel Aviv.
+        </h5>
+        <hr style="width: 200px" class="w3-opacity" />
+
+        <!-- project section -->
+        <div
+          class="w3-row-padding w3-padding-16 w3-center navi-blue w3-round project-holder"
+          id="food"
+        >
+          <!-- safe unlock -->
+          <div
+            class="col-sm-6 w3-quarter w3-black w3-padding-16 w3-center w3-round"
+          >
+            <img
+              src="gif\26.gif"
+              class="w3-round w3-image w3-opacity-min project-img"
+              alt="safe unlock gif"
+              style="width: 75%"
+            />
+
+            <h3 class="w3-center">Safe Unlock</h3>
+
+            <p class="w3-text-grey">
+              Safe unlock is a puzzle style game where player utilizes unlocking
+              system for obtaining rewards
+            </p>
+
+            <button
+              class="w3-button w3-white w3-padding-large w3-section w3-round-medium"
+            >
+              <i class="fa fa-info-circle"></i> More Info
+            </button>
+          </div>
+          <!-- end of safe unlock -->
+
+          <!-- pull n catch -->
+          <div
+            class="col-sm-6 w3-quarter w3-black w3-padding-16 w3-center w3-round"
+          >
+            <img
+              src="gif\36.gif"
+              class="w3-round w3-image w3-opacity-min project-img"
+              alt=" gif"
+              style="width: 75%"
+            />
+
+            <h3 class="w3-center">Pull N Catch</h3>
+
+            <p class="w3-text-grey">
+              Pull N Catch is an idle style game where players are intended
+              collect resources for upgrades.
+            </p>
+
+            <button
+              class="w3-button w3-white w3-padding-large w3-section w3-round-medium"
+            >
+              <i class="fa fa-info-circle"></i> More Info
+            </button>
+          </div>
+          <!-- end of pull n catch -->
+
+          <!-- blend fruits -->
+          <div
+            class="col-sm-6 w3-quarter w3-black w3-padding-16 w3-center w3-round"
+          >
+            <img
+              src="gif\35.gif"
+              class="w3-round w3-image w3-opacity-min project-img"
+              alt="blend fruits gif"
+              style="width: 75%"
+            />
+
+            <h3 class="w3-center">Blend Fruits</h3>
+
+            <p class="w3-text-grey">
+              Blend Fruits is a puzzle style game where players are intended to
+              manage a fruit juice shop.
+            </p>
+
+            <button
+              class="w3-button w3-white w3-padding-large w3-section w3-round-medium"
+            >
+              <i class="fa fa-info-circle"></i> More Info
+            </button>
+          </div>
+          <!-- end of blend fruits -->
+
+          <!-- drop n fill -->
+          <div
+            class="col-sm-6 w3-quarter w3-black w3-padding-16 w3-center w3-round"
+          >
+            <img
+              src="gif\20.gif"
+              class="w3-round w3-image w3-opacity-min project-img"
+              alt="drop n fill gif"
+              style="width: 75%"
+            />
+
+            <h3 class="w3-center">Drop N Fill</h3>
+
+            <p class="w3-text-grey">
+              Drop N Fill is a puzzle style game involved in filling up a given
+              container using the assigned fruits.
+            </p>
+
+            <button
+              class="w3-button w3-white w3-padding-large w3-section w3-round-medium"
+            >
+              <i class="fa fa-info-circle"></i> More Info
+            </button>
+          </div>
+          <!-- end of drop n fill -->
+
+          <!-- money stacks -->
+          <div
+            class="col-sm-6 w3-quarter w3-black w3-padding-16 w3-center w3-round"
+          >
+            <img
+              src="gif\21.gif"
+              class="w3-round w3-image w3-opacity-min project-img"
+              alt="money stacks gif"
+              style="width: 75%"
+            />
+
+            <h3 class="w3-center">Money Stacks</h3>
+
+            <p class="w3-text-grey">
+              Money Stacks is a puzzle style game based on well known Tetris
+              combined with money and with elaborated objective.
+            </p>
+
+            <button
+              class="w3-button w3-white w3-padding-large w3-section w3-round-medium"
+            >
+              <i class="fa fa-info-circle"></i> More Info
+            </button>
+          </div>
+          <!-- end of money stacks -->
+
+          <!-- city demolisher -->
+          <div
+            class="col-sm-6 w3-quarter w3-black w3-padding-16 w3-center w3-round"
+          >
+            <img
+              src="gif\31.gif"
+              class="w3-round w3-image w3-opacity-min project-img"
+              alt="city demolisher gif"
+              style="width: 75%"
+            />
+
+            <h3 class="w3-center">City Demolisher</h3>
+
+            <p class="w3-text-grey">
+              City Demolisher is an aracde style game which utilizes tools to
+              gather and manage resources.
+            </p>
+
+            <button
+              class="w3-button w3-white w3-padding-large w3-section w3-round-medium"
+            >
+              <i class="fa fa-info-circle"></i> More Info
+            </button>
+          </div>
+          <!-- end of city demolisher -->
+
+          <!-- mountain breaker -->
+          <div
+            class="col-sm-6 w3-quarter w3-black w3-padding-16 w3-center w3-round"
+          >
+            <img
+              src="gif\30.gif"
+              class="w3-round w3-image w3-opacity-min project-img"
+              alt="mountain breaker gif"
+              style="width: 75%"
+            />
+
+            <h3 class="w3-center">Mountain Breaker</h3>
+
+            <p class="w3-text-grey">
+              Mountain Breaker is an aracade style game which utilizes tools to
+              gather and manage resources.
+            </p>
+
+            <button
+              class="w3-button w3-white w3-padding-large w3-section w3-round-medium"
+            >
+              <i class="fa fa-info-circle"></i> More Info
+            </button>
+          </div>
+          <!-- end of mountain breaker-->
+
+          <!-- cash stealer -->
+          <div
+            class="col-sm-6 w3-quarter w3-black w3-padding-16 w3-center w3-round"
+          >
+            <img
+              src="gif\27.gif"
+              class="w3-round w3-image w3-opacity-min project-img"
+              alt="cash stealer gif"
+              style="width: 75%"
+            />
+
+            <h3 class="w3-center">Cash Stealer</h3>
+
+            <p class="w3-text-grey">
+              Cash Stealer is a runner type hyper-casual game that focuses on
+              resource collection and management.
+            </p>
+
+            <button
+              class="w3-button w3-white w3-padding-large w3-section w3-round-medium"
+            >
+              <i class="fa fa-info-circle"></i> More Info
+            </button>
+          </div>
+          <!-- end of cash stealer-->
+
+          <!-- color blending -->
+          <div
+            class="col-sm-6 w3-quarter w3-black w3-padding-16 w3-center w3-round"
+          >
+            <img
+              src="gif\28.gif"
+              class="w3-round w3-image w3-opacity-min project-img"
+              alt="color blending gif"
+              style="width: 75%"
+            />
+
+            <h3 class="w3-center">Color Blending</h3>
+
+            <p class="w3-text-grey">
+              Color Blending is a puzzle style game involved in matching the
+              color of a given object in-order to obtain rewards.
+            </p>
+
+            <button
+              class="w3-button w3-white w3-padding-large w3-section w3-round-medium"
+            >
+              <i class="fa fa-info-circle"></i> More Info
+            </button>
+          </div>
+          <!-- end of color blending-->
+
+          <!-- color guess -->
+          <div
+            class="col-sm-6 w3-quarter w3-black w3-padding-16 w3-center w3-round"
+          >
+            <img
+              src="gif\29.gif"
+              class="w3-round w3-image w3-opacity-min project-img"
+              alt="color guess gif"
+              style="width: 75%"
+            />
+
+            <h3 class="w3-center">Color Guess</h3>
+
+            <p class="w3-text-grey">
+              Color Guess is an arcade-puzzle style game involved in guessing
+              the result color of a given color combination.
+            </p>
+
+            <button
+              class="w3-button w3-white w3-padding-large w3-section w3-round-medium"
+            >
+              <i class="fa fa-info-circle"></i> More Info
+            </button>
+          </div>
+          <!-- end of color guess -->
+
+          <!-- hyper air support -->
+          <div
+            class="col-sm-6 w3-quarter w3-black w3-padding-16 w3-center w3-round"
+          >
+            <img
+              src="gif\32.gif"
+              class="w3-round w3-image w3-opacity-min project-img"
+              alt="hyper air support gif"
+              style="width: 75%"
+            />
+
+            <h3 class="w3-center">Hyper Air Support</h3>
+
+            <p class="w3-text-grey">
+              Hyper Air Support is a strategy based game involved in using
+              resources to fight and overcome enemies.
+            </p>
+
+            <button
+              class="w3-button w3-white w3-padding-large w3-section w3-round-medium"
+            >
+              <i class="fa fa-info-circle"></i> More Info
+            </button>
+          </div>
+          <!-- end of hyper air support-->
+
+          <!-- dome defence -->
+          <div
+            class="col-sm-6 w3-quarter w3-black w3-padding-16 w3-center w3-round"
+          >
+            <img
+              src="gif\34.gif"
+              class="w3-round w3-image w3-opacity-min project-img"
+              alt="dome defence gif"
+              style="width: 75%"
+            />
+
+            <h3 class="w3-center">Dome Defence</h3>
+
+            <p class="w3-text-grey">
+              Dome Defence is an aracde style game involved in managing
+              resources to counter against enemy waves.
+            </p>
+
+            <button
+              class="w3-button w3-white w3-padding-large w3-section w3-round-medium"
+            >
+              <i class="fa fa-info-circle"></i> More Info
+            </button>
+          </div>
+          <!-- end of dome defence -->
+
+          <!-- animal claws -->
+          <div
+            class="col-sm-6 w3-quarter w3-black w3-padding-16 w3-center w3-round"
+          >
+            <img
+              src="gif\37.gif"
+              class="w3-round w3-image w3-opacity-min project-img"
+              alt="animal claws gif"
+              style="width: 75%"
+            />
+
+            <h3 class="w3-center">Animal Claws</h3>
+
+            <p class="w3-text-grey">
+              Animal Claws is an arcade style game involved in capturing target
+              animals under given resources.
+            </p>
+
+            <button
+              class="w3-button w3-white w3-padding-large w3-section w3-round-medium"
+            >
+              <i class="fa fa-info-circle"></i> More Info
+            </button>
+          </div>
+          <!-- end of animal claws -->
+        </div>
+        <!-- end projects section -->
+      </div>
+      <!-- End Supersonic Section -->
+
+      <!-- Voodoo section -->
+      <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="voodoo">
+        <h2 class="w3-text-light-grey">
+          <a class="link" href="https://www.voodoo.io/" target="_blank"
+            >Voodoo Projects</a
+          >
+        </h2>
+        <h5 class="w3-text-grey">
+          Voodoo SAS is a French video game developer and publisher based in
+          Paris.
+        </h5>
+        <hr style="width: 200px" class="w3-opacity" />
+
+        <!-- project section -->
+        <div
+          class="w3-row-padding w3-padding-16 w3-center navi-blue w3-round project-holder"
+          id="food"
+        >
+          <!-- slow em down -->
+          <div
+            class="col-sm-6 w3-quarter w3-black w3-padding-16 w3-center w3-round"
+          >
+            <img
+              src="gif\1.gif"
+              class="w3-round w3-image w3-opacity-min project-img"
+              alt="slow them down gif"
+              style="width: 75%"
+            />
+
+            <h3 class="w3-center">Slow Them Down</h3>
+
+            <p class="w3-text-grey">
+              Slow Them Down is a runner style game focusing on obstacle course
+              for player to compete against.
+            </p>
+
+            <button
+              class="w3-button w3-white w3-padding-large w3-section w3-round-medium"
+            >
+              <i class="fa fa-info-circle"></i> More Info
+            </button>
+          </div>
+          <!-- end of slow them down -->
+
+          <!-- slow em down -->
+          <div
+            class="col-sm-6 w3-quarter w3-black w3-padding-16 w3-center w3-round"
+          >
+            <img
+              src="gif\5.gif"
+              class="w3-round w3-image w3-opacity-min project-img"
+              alt="slow them down gif"
+              style="width: 75%"
+            />
+
+            <h3 class="w3-center">Slow Them Down</h3>
+
+            <p class="w3-text-grey">
+              Slow Them Down is a runner style game focusing on obstacle course
+              for player to compete against.
+            </p>
+
+            <button
+              class="w3-button w3-white w3-padding-large w3-section w3-round-medium"
+            >
+              <i class="fa fa-info-circle"></i> More Info
+            </button>
+          </div>
+          <!-- end of slow them down -->
+        </div>
+        <!-- end projects section -->
+      </div>
+      <!-- End Voodoo section -->
+
+      <!-- Contact Section -->
+      <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+        <h2 class="w3-text-light-grey">Contact Me</h2>
+        <hr style="width: 200px" class="w3-opacity" />
+
+        <div class="w3-section">
+          <p>
+            <img
+              src="images/phone56.GIF"
+              alt="Tele no"
+              style="width: 5%"
+              class="w3-margin-right"
+            />
+            Phone: +94 7 11 78 31 60
+          </p>
+
+          <p>
+            <img
+              src="images/email37.PNG"
+              alt="email"
+              style="width: 5%"
+              class="w3-margin-right"
+            />
+            Email:
+            <a
+              class="w3-hover-text-cyan"
+              href="mailto:sadidulakasunka@gmail.com?subject = Feedback&body = Message"
+            >
+              sadidulakasunka@gmail.com
+            </a>
+          </p>
+        </div>
+      </div>
+      <!-- End Contact Section -->
+
+      <!-- Footer -->
+      <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+        <p class="w3-medium">
+          All concepts presented on this website are protected. Do not use
+          without authorization. GIF are obtained from Giphy website.
+        </p>
+      </footer>
+      <!-- End footer -->
+    </div>
+    <!-- END PAGE CONTENT -->
+  </body>
+</html>

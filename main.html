@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+  <link rel="stylesheet" href="w3.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="gensis.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="TemplateData/style.css">
+
+  <title>SADidula.com | S.A Didula Kasunka Manura - Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="images/icon-v2.ico">
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+</head>
+<body class="dark">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <!--  <img src="/w3images/avatar_smoke.jpg" style="width:100%">-->
+  <img src="images/S.gif" alt="S" style="width:50%; left: 44%; top: -.5%;">
+  <img src="images/A.gif" alt="A" style="width:50%; left: 46%; top: -.5%;">
+  <img src="images/D.gif" alt="D" style="width:50%; left: 48%; top: -.5%;">
+  <img src="images/K.gif" alt="K" style="width:50%; left: 50%; top: -.5%;">
+
+  <p></p>
+
+  <a href="projects_gamedev.html" class="w3-bar-item w3-button w3-padding-large">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>.GAME<br>PROJECTS()</p>
+  </a>
+
+  <a href="projects_fullstack.html" class="w3-bar-item w3-button w3-padding-large">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>.FULLSTACK<br>PROJECTS()</p>
+  </a>
+
+  <a href="projects_personal.html" class="w3-bar-item w3-button w3-padding-large">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>.PERSONAL<br>PROJECTS()</p>
+  </a>
+
+  <a href="#footer" class="w3-bar-item w3-button w3-padding-large">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>.ABOUT()</p>
+  </a>
+
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="projects_gamedev.html" class="w3-bar-item w3-button" style="width:25% !important">.GAME PROJECTS()</a>
+    <a href="projects_fullstack.html" class="w3-bar-item w3-button" style="width:25% !important">.FULLSTACK PROJECTS()</a>
+    <a href="projects_personal.html" class="w3-bar-item w3-button" style="width:25% !important">.PERSONAL PROJECTS()</a>
+    <a href="#footer" class="w3-bar-item w3-button" style="width:25% !important">.ABOUT()</a>
+  </div>
+</div>
+
+<!-- Page content -->
+<div class="w3-padding-large" id="main">
+
+  <!-- Introduction -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> S.A. Didula Kasunka Manura.</h1>
+    <p>A Full-Stack Developer, Game Programmer, and Game Designer.</p>
+    <img src="images/facev2.png" alt="Didula's portrait" class="portrait">
+  </header>
+  <!-- Introduction end -->
+
+  <!-- Game section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">About Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-container w3-padding-32 w3-center w3-black gamediv" id="unity-canvas-holder">
+      <div id="unity-container">
+      </div>
+      <canvas width="100%" height="100%" class="gamearea" id="unity-canvas" tabindex="-1"></canvas>
+      <div id="unity-loading-bar" class="w3-justify">
+        <div id="unity-logo"></div>
+        <div id="unity-progress-bar-empty">
+          <div id="unity-progress-bar-full"></div>
+        </div>
+      </div>
+      <div id="unity-warning"> </div>
+    </div>
+
+  </div>
+  <!-- End About Section -->
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p>
+        <img src="images/phone56.GIF" alt="Tele no" style="width: 5%" class="w3-margin-right">
+        Phone: +94 7 11 78 31 60
+      </p>
+
+      <p>
+        <img src="images/email37.PNG" alt="email" style="width: 5%" class="w3-margin-right">
+        Email:
+        <a class="w3-hover-text-cyan" href="mailto:sadidulakasunka@gmail.com?subject = Feedback&body = Message">
+          sadidulakasunka@gmail.com
+        </a>
+      </p>
+
+    </div>
+  </div>
+  <!-- End Contact Section -->
+
+  <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <p class="w3-medium">All concepts presented on this website are protected. Do not use without authorization. GIF are obtained from Giphy website.</p>
+  </footer>
+  <!-- End footer -->
+
+</div>
+<!-- END PAGE CONTENT -->
+
+<script>
+
+  var container = document.querySelector("#unity-container");
+  var canvas = document.querySelector("#unity-canvas");
+  var canvasHolder = document.querySelector("#unity-canvas-holder");
+  var loadingBar = document.querySelector("#unity-loading-bar");
+  var progressBarFull = document.querySelector("#unity-progress-bar-full");
+  var fullscreenButton = document.querySelector("#unity-fullscreen-button");
+  var warningBanner = document.querySelector("#unity-warning");
+
+  // Shows a temporary message banner/ribbon for a few seconds, or
+  // a permanent error message on top of the canvas if type=='error'.
+  // If type=='warning', a yellow highlight color is used.
+  // Modify or remove this function to customize the visually presented
+  // way that non-critical warnings and error messages are presented to the
+  // user.
+  function unityShowBanner(msg, type) {
+    function updateBannerVisibility() {
+      warningBanner.style.display = warningBanner.children.length ? 'block' : 'none';
+    }
+    var div = document.createElement('div');
+    div.innerHTML = msg;
+    warningBanner.appendChild(div);
+    if (type == 'error') div.style = 'background: red; padding: 10px;';
+    else {
+      if (type == 'warning') div.style = 'background: yellow; padding: 10px;';
+      setTimeout(function() {
+        warningBanner.removeChild(div);
+        updateBannerVisibility();
+      }, 5000);
+    }
+    updateBannerVisibility();
+  }
+
+  var buildUrl = "Build";
+  var loaderUrl = buildUrl + "/build.loader.js";
+  var config = {
+    dataUrl: buildUrl + "/build.data",
+    frameworkUrl: buildUrl + "/build.framework.js",
+    codeUrl: buildUrl + "/build.wasm",
+    streamingAssetsUrl: "StreamingAssets",
+    companyName: "DefaultCompany",
+    productName: "Portfolio",
+    productVersion: "0.1",
+    showBanner: unityShowBanner,
+  };
+
+  // By default Unity keeps WebGL canvas render target size matched with
+  // the DOM size of the canvas element (scaled by window.devicePixelRatio)
+  // Set this to false if you want to decouple this synchronization from
+  // happening inside the engine, and you would instead like to size up
+  // the canvas DOM size and WebGL render target sizes yourself.
+  // config.matchWebGLToCanvasSize = false;
+
+  if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+    // Mobile device style: fill the whole browser client area with the game canvas:
+
+    var meta = document.createElement('meta');
+    meta.name = 'viewport';
+    meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+    document.getElementsByTagName('head')[0].appendChild(meta);
+    container.className = "unity-mobile";
+    canvas.className = "unity-mobile";
+
+    // To lower canvas resolution on mobile devices to gain some
+    // performance, uncomment the following line:
+    // config.devicePixelRatio = 1;
+
+
+  } else {
+    // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
+    canvas.style.width = canvasHolder.style.width;
+    canvas.style.height = canvasHolder.style.height;
+  }
+
+  loadingBar.style.display = "none";
+
+  var script = document.createElement("script");
+  script.src = loaderUrl;
+  script.onload = () => {
+    createUnityInstance(canvas, config, (progress) => {
+      progressBarFull.style.width = 100 * progress + "%";
+    }).then((unityInstance) => {
+      loadingBar.style.display = "none";
+      // fullscreenButton.onclick = () => {
+      //   unityInstance.SetFullscreen(1);
+      // };
+    }).catch((message) => {
+      alert(message);
+    });
+  };
+
+  document.body.appendChild(script);
+
+</script>
+
+</body>
+</html>

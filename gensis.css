@@ -1,0 +1,93 @@
+img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
+    display: none;
+}
+
+* {
+    font-family: "American Typewriter";
+}
+
+.testing {
+    background-color: red;
+}
+
+.dark {
+    color:#fff!important;
+    background-color:#282a36!important
+}
+
+.w3-black,.w3-hover-black:hover {
+    color:#fff!important;
+    background-color:#222!important
+}
+
+.navi-blue {
+    color: #6272a4;
+    background-color: #6272a4;
+}
+
+.cyan {
+    color: #8be9fd;
+    background-color: #8be9fd;
+}
+
+.green {
+    color: #50fa7b;
+    background-color: #50fa7b;
+}
+
+.orange {
+    color: #ffb86c;
+    background-color: #ffb86c;
+}
+
+.pink {
+    color: #ff79c6;
+    background-color: #ff79c6;
+}
+
+.purple {
+    color: #bd93f9;
+    background-color: #bd93f9;
+}
+
+.red {
+    color: #ff5555;
+    background-color: #ff5555;
+}
+
+.yellow {
+    color: #f1fa8c;
+    background-color: #f1fa8c;
+}
+
+.text-navi-blue {
+    color: #6272a4;
+}
+
+.text-cyan {
+    color: #8be9fd;
+}
+
+.text-green {
+    color: #50fa7b;
+}
+
+.text-orange {
+    color: #ffb86c;
+}
+
+.text-pink {
+    color: #ff79c6;
+}
+
+.text-purple {
+    color: #bd93f9;
+}
+
+.text-red {
+    color: #ff5555;
+}
+
+.text-yellow {
+    color: #f1fa8c;
+}

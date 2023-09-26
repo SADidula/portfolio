@@ -1,0 +1,502 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (min-width: 1024px) {
+    body {
+        font-family: 'Consolas', sans-serif;
+        min-height: 500%;
+    }
+
+    html {
+        min-height: 500%;
+    }
+
+    .dark {
+        background-color: #282a36;
+    }
+
+    .light {
+        background-color: #f8f8f2;
+    }
+
+    .mode {
+        position: absolute;
+        right: 5%;
+        top: 5%;
+        background-color: transparent;
+        border: none;
+        width: 3%;
+        z-index: 1;
+        cursor: pointer;
+    }
+
+    .mode img {
+        width: 100%;
+    }
+
+    .invert {
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+    }
+
+    .intro {
+        height: 100vh;
+        align-items: center;
+    }
+
+    .intro img {
+        height: 30%;
+        position: absolute;
+        top: 13%;
+        left: 5%;
+        border-radius: 100%;
+    }
+
+    .intro video {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .intro h1 {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* font-size: 80px; */
+        font-size: 8.611410118406889vh;
+    }
+
+    .intro h2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 50px;
+    }
+
+    .intro h3 {
+        position: absolute;
+        top: 50%;
+        transform: translate(15%, -50%);
+        font-size: 50px;
+    }
+
+    .in_intro {
+        padding-top: 20%;
+        font-size: 48px;
+    }
+
+    .in_intro img {
+        height: 30%;
+        position: absolute;
+        top: 18%;
+        left: 75%;
+    }
+
+    .spacer {
+        padding-top: 20%;
+    }
+
+
+
+    section {
+        height: 60vh;
+        font-weight: 700;
+        align-items: center;
+    }
+
+    section h1 {
+        padding: 300px;
+        text-align: center;
+        font-size: 80px;
+    }
+
+
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: #111;
+    }
+
+    .active {
+        background-color: #0491aa;
+    }
+
+    .nav {
+        font-family: sans-serif;
+    }
+
+
+
+
+
+
+    .box {
+        padding-left: 10%;
+        padding-top: 2%;
+        width: 90%;
+        font-size: 2em;
+        font-weight: 700;
+        display: block;
+        align-items: center;
+        float: left;
+    }
+
+    .box h4 {
+        font-size: .75em;
+        padding-left: 5%;
+        padding-top: 2%;
+    }
+
+    .floatL {
+        float: left;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+
+
+    .talent {
+        height: 100vh;
+        align-items: center;
+    }
+
+    .talent_spacer {
+        padding-top: 50%;
+    }
+
+    .talent h1 {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 20%);
+        font-size: 80px;
+    }
+
+    .talent h2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 50px;
+    }
+
+    .talent h3 {
+        position: absolute;
+        top: 92%;
+        left: -14%;
+        transform: translate(25%, -50%);
+        font-size: 50px;
+    }
+
+
+    .padding_spacer {
+        padding-top: 88%;
+    }
+
+    .padding_div_left {
+        padding-top: 40%;
+        padding-right: 40%;
+    }
+
+    .padding_div_right {
+        padding-left: 44%;
+    }
+
+    .in_wp h1 {
+        padding: 300px;
+        text-align: center;
+        font-size: 80px;
+    }
+
+    .in_wp h3 {
+        position: absolute;
+        top: 67%;
+        left: 25%;
+        transform: translate(25%, -50%);
+        font-size: 50px;
+    }
+
+    .in_wp img {
+        height: 35%;
+        position: absolute;
+        top: 70%;
+        left: 45%;
+    }
+
+    .projects {
+        width: 79%;
+        align-items: center;
+        margin: 4px;
+        font-size: 1.2em;
+        font-weight: 700;
+        border-radius: 4px;
+        display: flex;
+        justify-content: left;
+        flex-wrap: wrap;
+    }
+
+    .projects p {
+        font-size: 1em;
+        padding-left: 5%;
+        padding-top: 2%;
+    }
+
+    .projects ol {
+        font-size: 1em;
+        padding-left: 5%;
+        padding-top: 2%;
+    }
+
+    .projects h5 {
+        font-size: 3.25em;
+        padding-left: 5%;
+        padding-top: 2%;
+    }
+
+    .projects h4 {
+        font-size: 2em;
+        padding-left: 5%;
+        padding-top: 2%;
+    }
+
+    .projects br {
+        padding-top: 10%;
+    }
+
+    .project_spacer {
+        padding-top: 4%;
+    }
+
+    .wrapper {
+        width: 300px;
+        height: 300px;
+        position: relative;
+        margin: 60px auto;
+    }
+
+    .parent,
+    .child {
+        position: absolute;
+        border-radius: 8px;
+    }
+
+    .parent {
+        width: 83%;
+        height: 100%;
+    }
+
+    .child {
+        width: 230px;
+        height: 120px;
+        right: -50px;
+        bottom: -20px;
+    }
+
+
+
+    .project_name {
+        align-items: center;
+        padding-left: 5%;
+        padding-right: 5%;
+        font-size: 25px;
+    }
+
+    .project_desc {
+        padding-top: 10%;
+        padding-left: 5%;
+        font-variant: small-caps;
+        font-size: 15px;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+    }
+
+    .gifCPI {
+        align-items: center;
+        border-radius: 2%;
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+
+    .among-us {
+        height: 10%;
+        position: absolute;
+        top: 80%;
+        left: 6%;
+    }
+
+
+
+
+
+
+    .skill_spacer {
+        padding-top: 55%;
+    }
+
+    #skillset {
+        height: 180%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skills {
+        height: 50%;
+        width: 30%;
+        align-items: center;
+        margin: 4px;
+        font-size: 1.2em;
+        font-weight: 700;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .skills p {
+        font-size: 1em;
+        padding-left: 5%;
+        padding-top: 2%;
+    }
+
+    .skills h5 {
+        font-size: 2.25em;
+        padding-left: 5%;
+        padding-top: 2%;
+    }
+
+    .skills h4 {
+        font-size: 1em;
+        padding-left: 5%;
+        padding-top: 2%;
+    }
+
+    .skills br {
+        padding-top: 10%;
+    }
+
+
+
+    /* dark mode color scheme */
+
+    .background {
+        color: #282a36;
+    }
+
+    .current {
+        background-color: #44475a;
+    }
+
+    .foreground {
+        color: #f8f8f2;
+    }
+
+    .comment {
+        color: #6272a4;
+    }
+
+    .cyan {
+        color: #8be9fd;
+    }
+
+    .green {
+        color: #50fa7b;
+    }
+
+    .orange {
+        color: #ffb86c;
+    }
+
+    .pink {
+        color: #ff79c6;
+    }
+
+    .purple {
+        color: #bd93f9;
+    }
+
+    .red {
+        color: #ff5555;
+    }
+
+    .yellow {
+        color: #f1fa8c;
+    }
+
+
+    /* light mode color scheme */
+
+    .background-light {
+        color: #f8f8f2;
+    }
+
+    .current-light {
+        background-color: #ffb86c;
+    }
+
+    .foreground-light {
+        color: #282a36;
+    }
+
+    .comment-light {
+        color: #818181;
+    }
+
+    .cyan-light {
+        color: #048324;
+    }
+
+    .green-light {
+        color: #7e0303;
+    }
+
+    .orange-light {
+        color: #6272a4;
+    }
+
+    .pink-light {
+        color: #6c7502;
+    }
+
+    .purple-light {
+        color: #4300a1;
+    }
+
+    .red-light {
+        color: #7e0303;
+    }
+
+    .yellow-light {
+        color: #6c7502;
+    }
+}
